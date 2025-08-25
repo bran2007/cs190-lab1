@@ -69,14 +69,8 @@ function getAge412() {
 </script>
 </head>
 <body>
-<h2>Lab 5 Assignment</h2>
-<button onclick="getName998();">Enter Customer Name</button>
-<span id="name998"></span><br>
-<button onclick="getAge412();">Enter Customer Age</button>
-<span id="age412"></span>
-<hr>
 
-<h2>Lab 2 Assignment</h2>
+    <h2>Lab 2 Assignment</h2>
 <a href="javascript:displayinfo871();">Web Page Information</a>
 <hr>
 
@@ -84,4 +78,12 @@ function getAge412() {
 <a href="https://www.google.com" onclick="confirmlink537('https://www.google.com'); return false;">Go to Google</a><br><br>
 <a href="https://www.walmart.com" onclick="confirmlink537('https://www.walmart.com'); return false;">Go to Walmart</a>
 </body>
+
+    <h2>Lab 5 Assignment</h2>
+<button onclick="getName998();">Enter Customer Name</button>
+<span id="name998"></span><br>
+<button onclick="getAge412();">Enter Customer Age</button>
+<span id="age412"></span>
+<hr>
+    
 </html>
