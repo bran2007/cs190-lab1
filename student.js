@@ -1,5 +1,3 @@
-// student.js - External JavaScript file for Lab assignments
-
 // Lab 2 Variables (created at top of file, not in a function)
 var thename = "Brandon Chang";
 var my_message = "cs190 Javascript Lab 2";
@@ -19,5 +17,5 @@ function confirmlink537(url) {
     if (userConfirm) {
         window.open(url, '_blank');
     }
-    return false; // Prevent default link behavior
+    return false;
 }
