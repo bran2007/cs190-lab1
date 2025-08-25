@@ -7,8 +7,8 @@ var id = 878;
 
 // Lab 2 Function - Display variable information in alert box
 function displayinfo871() {
-    var message = "Name: " + thename + "\n" + 
-                  "Message: " + my_message + "\n" + 
+    var message = "Name: " + thename + "\\n" + 
+                  "Message: " + my_message + "\\n" + 
                   "ID: " + id;
     alert(message);
 }
