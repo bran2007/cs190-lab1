@@ -31,24 +31,6 @@ function confirmlink537(url) {
     return false;
 }
 
-// Lab 5 Function - Get customer name and display message with control statement
-function getName998() {
-    var name = prompt("Please enter your name:");
-    var message = "Your Name Is: " + name + " ";
-    
-    // Control statement based on name length
-    if (name.length < 5) {
-        message += "You have a short name";
-    } else if (name.length < 10) {
-        message += "You have a medium name";
-    } else {
-        message += "You have a long name";
-    }
-    
-    // Display message next to button
-    document.getElementById("name998").innerHTML = message;
-}
-
 // Lab 5 Functions
 function getName998() {
     var name = prompt("Please enter your name:");
@@ -86,8 +68,14 @@ function getAge412() {
 </script>
 </head>
 <body>
+<h2>Lab 5 Assignment</h2>
+<button onclick="getName998();">Enter Customer Name</button>
+<span id="name998"></span><br>
+<button onclick="getAge412();">Enter Customer Age</button>
+<span id="age412"></span>
+<hr>
 
-    <h2>Lab 2 Assignment</h2>
+<h2>Lab 2 Assignment</h2>
 <a href="javascript:displayinfo871();">Web Page Information</a>
 <hr>
 
@@ -95,6 +83,4 @@ function getAge412() {
 <a href="https://www.google.com" onclick="confirmlink537('https://www.google.com'); return false;">Go to Google</a><br><br>
 <a href="https://www.walmart.com" onclick="confirmlink537('https://www.walmart.com'); return false;">Go to Walmart</a>
 </body>
-
-    
 </html>
