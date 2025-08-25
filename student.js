@@ -49,12 +49,29 @@ function getName998() {
     document.getElementById("name998").innerHTML = message;
 }
 
-// Lab 5 Function - Get customer age and display message with control statement
+// Lab 5 Functions
+function getName998() {
+    var name = prompt("Please enter your name:");
+    var message = "Your Name Is: " + name + " ";
+    
+    // Control statement for name length
+    if (name.length < 5) {
+        message += "You have a short name";
+    } else if (name.length < 10) {
+        message += "You have a medium name";
+    } else {
+        message += "You have a long name";
+    }
+    
+    // Display the message next to the button
+    document.getElementById("name998").innerHTML = message;
+}
+
 function getAge412() {
     var age = parseInt(prompt("Please enter your age:"));
     var message = "Your Age Is: " + age + " ";
     
-    // Control statement based on age
+    // Control statement for age categories
     if (age < 18) {
         message += "You are a kid";
     } else if (age < 50) {
@@ -63,7 +80,7 @@ function getAge412() {
         message += "You are a senior citizen";
     }
     
-    // Display message next to button
+    // Display the message next to the button
     document.getElementById("age412").innerHTML = message;
 }
 </script>
@@ -79,11 +96,5 @@ function getAge412() {
 <a href="https://www.walmart.com" onclick="confirmlink537('https://www.walmart.com'); return false;">Go to Walmart</a>
 </body>
 
-    <h2>Lab 5 Assignment</h2>
-<button onclick="getName998();">Enter Customer Name</button>
-<span id="name998"></span><br>
-<button onclick="getAge412();">Enter Customer Age</button>
-<span id="age412"></span>
-<hr>
     
 </html>
