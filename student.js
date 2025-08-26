@@ -18,19 +18,11 @@ function displayinfo871() {
 var current = 1;     // selects which item that is "on special"
 
 function displayspecial976() {
-    if (current == 1) {
-        alert("The current special is #1");
-    }
-    if (current == 2) {
-        alert("The current special is #2");
-    }
-    if (current == 3) {
-        alert("The current special is #3");
-    }
+    if (current == 1) alert("The current special is #1");
+    if (current == 2) alert("The current special is #2");
+    if (current == 3) alert("The current special is #3");
     current = current + 1;
-    if (current > 3) {
-        current = 1;  // wrap around
-    }
+    if (current > 3) current = 1;  // wrap around
 }
 
 // Lab 4
@@ -69,4 +61,27 @@ function getAge412() {
     else if (age < 50) message += "You are an adult";
     else message += "You are a senior citizen";
     document.getElementById("age412").innerText = message;
+}
+
+// Lab 6
+function getBreaks876() {
+    var num;
+    do {
+        num = Number(prompt("Enter a number from 1 to 5:"));
+    } while (num < 1 || num > 5);
+
+    var breaks = "";
+    for (var i = 0; i < num; i++) breaks += "<br>";
+    document.getElementById("breaks876").innerHTML = breaks;
+}
+
+function getCards495() {
+    var num;
+    do {
+        num = Number(prompt("Enter a number from 2 to 7:"));
+    } while (num < 2 || num > 7);
+
+    var cards = "";
+    for (var i = 0; i < num; i++) cards += "Card #" + i + " ";
+    document.getElementById("cards495").innerText = cards;
 }
