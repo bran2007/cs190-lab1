@@ -31,3 +31,29 @@ function displayspecial976() {
         current = 1; // wrap around
     }
 }
+
+// ===== Lab 4 =====
+var custtype = "direct"; // global variable
+
+function changetype488() {
+    var newtype;
+    if (custtype === "direct") {
+        newtype = "advertising";
+    } else if (custtype === "advertising") {
+        newtype = "subscription";
+    } else if (custtype === "subscription") {
+        newtype = "direct";
+    }
+    custtype = newtype;
+    alert("Customer type changed to: " + custtype);
+}
+
+function displaytype493() {
+    if (custtype === "direct") {
+        alert("Buy Now! From this web page! My children need new shoes!");
+    } else if (custtype === "advertising") {
+        alert("Support our advertisers! Click on an ad, so I can make money!");
+    } else if (custtype === "subscription") {
+        alert("Renew your subscription today! My children need medicine!");
+    }
+}
