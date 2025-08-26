@@ -1,48 +1,45 @@
 <!doctype html>
+<!--
+ * Who: Brandon Chang
+ * What: CMP SCI cs190 Lab Web Page Project
+ * What: Labs 1-5
+-->
 <html>
 <head>
 <meta charset="UTF-8">
-<title>CS190 Lab 1–4</title>
 <script src="student.js"></script>
 </head>
 
 <body>
 
+<h2>Lab 5 Assignment</h2>
+<button onclick="getName998()">Enter Customer Name</button>
+<span id="name998"></span>
+<br><br>
+<button onclick="getAge412()">Enter Customer Age</button>
+<span id="age412"></span>
+<hr>
+
 <h2>Lab 4 Assignment</h2>
-
-<table style='width:100%' border='0'>
-<tr>
-<td style='width:30%;text-align:left'><a href="javascript:displayspecial976()">Today's Special</a></td>
-<td style='width:40%;text-align:center'><a href="javascript:displaytype493()">Display Message</a></td>
-<td style='width:30%;text-align:right'><a href="javascript:changetype488()">Change Customer Type</a></td>
-</tr>
-</table>
-
+<a href="javascript:displayspecial976()">Today's Special</a> &nbsp;
+<a href="javascript:displaytype493()">Display Message</a> &nbsp;
+<a href="javascript:changetype488()">Change Customer Type</a>
 <hr>
 
 <h2>Lab 3 Assignment</h2>
-
-<p>Debugger error messages from the original buggy code:</p>
-<ul>
-<li>Uncaught SyntaxError: missing ) after argument list</li>
-<li>Uncaught SyntaxError: missing ) after condition</li>
-<li>Uncaught SyntaxError: missing ) after argument list</li>
-</ul>
-
 <a href="javascript:displayspecial976()">Today's Special</a>
-
+<p>Error 1: unterminated string literal</p>
+<p>Error 2: missing parenthesis</p>
+<p>Error 3: missing semicolon</p>
 <hr>
 
 <h2>Lab 2 Assignment</h2>
-
-<a href="#" onclick="displayinfo871()">Web Page Information</a>
-
+<a href="javascript:displayinfo871()">Web Page Information</a>
 <hr>
 
 <h2>Lab 1 Assignment</h2>
-
-<a href="https://www.google.com" onclick="return confirmlink537('https://www.google.com')">Go to Google</a><br>
-<a href="https://www.walmart.com" onclick="return confirmlink537('https://www.walmart.com')">Go to Walmart</a>
+<a href="javascript:confirmlink537('https://www.google.com')">Jump to Google</a>
+<a href="javascript:confirmlink537('https://www.walmart.com')">Jump to Walmart</a>
 
 </body>
 </html>
