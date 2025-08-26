@@ -1,3 +1,8 @@
 function confirmlink537(url) {
-    return confirm("Do you want to go to " + url + "?");
+  let confirmJump = confirm("Do you want to visit this site?");
+  if (confirmJump) {
+    window.location = url;
+    return false; 
+  }
+  return false; 
 }
