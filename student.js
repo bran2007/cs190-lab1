@@ -15,8 +15,8 @@ function displayinfo871() {
     alert(message);
 }
 
-// Lab 3 variables and function
-var current = 1;  // selects which item that is "on special"
+// Lab 3
+var current = 1;  // selects which item is "on special"
 
 function displayspecial976() {
     if (current == 1) {
