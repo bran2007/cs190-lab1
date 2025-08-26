@@ -19,14 +19,12 @@ function displayinfo871() {
 var current = 1; // declare outside functions
 
 function displayspecial976() {
-    if (current == 1) {
-        alert("The current special is #1"); // fixed unterminated string
-    }
-    if (current == 2) {
-        alert("The current special is #2"); // fixed missing parenthesis
-    }
-    if (current == 3) {
-        alert("The current special is #3"); // fixed missing semicolon
+    if (current === 1) {
+        alert("The current special is #1");
+    } else if (current === 2) {
+        alert("The current special is #2");
+    } else if (current === 3) {
+        alert("The current special is #3");
     }
     current = current + 1;
     if (current > 3) {
