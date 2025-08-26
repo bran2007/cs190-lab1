@@ -1,21 +1,20 @@
-// Lab 1: Confirm link function
+// Lab 1
 function confirmlink537(url) {
-    if (confirm("Do you want to go to this link?")) {
-        window.location.href = url;
+    if (confirm("Do you want to jump to this site?")) {
+        window.location = url;
     }
 }
 
-// Lab 2: Display variables
+// Lab 2
 var thename = "Brandon Chang";
 var my_message = "cs190 Javascript Lab 2";
 var id = 878;
 
 function displayinfo871() {
-    var message = "Name: " + thename + "\nMessage: " + my_message + "\nID: " + id;
-    alert(message);
+    alert("Name: " + thename + "\nMessage: " + my_message + "\nID: " + id);
 }
 
-// Lab 3: Display specials
+// Lab 3
 var current = 1;  // selects which item is "on special"
 
 function displayspecial976() {
