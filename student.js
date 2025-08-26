@@ -14,7 +14,6 @@ function displayinfo871() {
     alert("Name: " + thename + "\nMessage: " + my_message + "\nID: " + id);
 }
 
-// Lab 3
 var current = 1;  // selects which item is "on special"
 
 function displayspecial976() {
