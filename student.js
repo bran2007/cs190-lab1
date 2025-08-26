@@ -1,23 +1,12 @@
-<!doctype html>
-<!--
- * Who: Brandon Chang
- * What: CMP SCI cs190 Lab Web Page Project
- * When: 08/25/2025  
- * What: Lab Web Page #1
--->
-<html>
-<head>
-<meta charset="UTF-8">
-<script>
-// Lab 2 Variables (created at top of file, not in a function)
+// Lab 2 Variables
 var thename = "Brandon Chang";
 var my_message = "cs190 Javascript Lab 2";
 var id = 878;
 
 // Lab 2 Function - Display variable information in alert box
 function displayinfo871() {
-    var message = "Name: " + thename + "\\n" + 
-                  "Message: " + my_message + "\\n" + 
+    var message = "Name: " + thename + "\n" + 
+                  "Message: " + my_message + "\n" + 
                   "ID: " + id;
     alert(message);
 }
@@ -31,56 +20,21 @@ function confirmlink537(url) {
     return false;
 }
 
-// Lab 5 Functions
-function getName998() {
-    var name = prompt("Please enter your name:");
-    var message = "Your Name Is: " + name + " ";
-    
-    // Control statement for name length
-    if (name.length < 5) {
-        message += "You have a short name";
-    } else if (name.length < 10) {
-        message += "You have a medium name";
-    } else {
-        message += "You have a long name";
+// Lab 3 - Today's Special
+var current = 1;  // declare outside the function
+
+function displayspecial976() {
+    if (current == 1) {
+        alert("The current special is #1");
     }
-    
-    // Display the message next to the button
-    document.getElementById("name998").innerHTML = message;
-}
-
-function getAge412() {
-    var age = parseInt(prompt("Please enter your age:"));
-    var message = "Your Age Is: " + age + " ";
-    
-    // Control statement for age categories
-    if (age < 18) {
-        message += "You are a kid";
-    } else if (age < 50) {
-        message += "You are an adult";
-    } else {
-        message += "You are a senior citizen";
+    if (current == 2) {
+        alert("The current special is #2");
     }
-    
-    // Display the message next to the button
-    document.getElementById("age412").innerHTML = message;
+    if (current == 3) {
+        alert("The current special is #3");
+    }
+    current = current + 1;
+    if (current > 3) {
+        current = 1;  // wrap around
+    }
 }
-</script>
-</head>
-<body>
-<h2>Lab 5 Assignment</h2>
-<button onclick="getName998();">Enter Customer Name</button>
-<span id="name998"></span><br>
-<button onclick="getAge412();">Enter Customer Age</button>
-<span id="age412"></span>
-<hr>
-
-<h2>Lab 2 Assignment</h2>
-<a href="javascript:displayinfo871();">Web Page Information</a>
-<hr>
-
-<h2>Lab 1 Assignment</h2>
-<a href="https://www.google.com" onclick="confirmlink537('https://www.google.com'); return false;">Go to Google</a><br><br>
-<a href="https://www.walmart.com" onclick="confirmlink537('https://www.walmart.com'); return false;">Go to Walmart</a>
-</body>
-</html>
