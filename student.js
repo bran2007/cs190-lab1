@@ -1,11 +1,11 @@
-// Lab 1 variables and functions
+// Lab 1: Confirm link function
 function confirmlink537(url) {
     if (confirm("Do you want to go to this link?")) {
         window.location.href = url;
     }
 }
 
-// Lab 2 variables
+// Lab 2: Display variables
 var thename = "Brandon Chang";
 var my_message = "cs190 Javascript Lab 2";
 var id = 878;
@@ -15,7 +15,7 @@ function displayinfo871() {
     alert(message);
 }
 
-// Lab 3
+// Lab 3: Display specials
 var current = 1;  // selects which item is "on special"
 
 function displayspecial976() {
