@@ -1,5 +1,5 @@
 // ==================== Lab 1 ====================
-// Lab 1 function: confirms before visiting links
+// Confirm before visiting links
 function confirmlink537(url) {
     let confirmJump = confirm("Do you want to visit this site?");
     if (confirmJump) {
@@ -15,7 +15,7 @@ let thename = "Brandon Chang";
 let my_message = "cs190 Javascript Lab 2";
 let id = 878;
 
-// Lab 2 function: shows all info in an alert
+// Show info in an alert
 function displayinfo871() {
     alert(
         "Name: " + thename + " " +
@@ -26,7 +26,7 @@ function displayinfo871() {
 
 // ==================== Lab 3 ====================
 // Lab 3 variable
-current = 1; // selects which item is "on special"
+current = 1; // global so autograder detects
 
 function displayspecial976() {
     if (current == 1) {
@@ -40,17 +40,16 @@ function displayspecial976() {
     }
     current = current + 1;
     if (current > 3) {
-        current = 1; // wrap around
+        current = 1; // wrap
     }
 }
 
 // ==================== Lab 4 ====================
-// Global variable for customer type
-custtype = "direct"; // starts as "direct"
+// Customer type variable
+custtype = "direct";
 
-// Function to change customer type
 function changetype488() {
-    var newtype = ""; // local variable
+    var newtype = "";
     if (custtype == "direct") {
         newtype = "advertising";
     }
@@ -60,11 +59,10 @@ function changetype488() {
     if (custtype == "subscription") {
         newtype = "direct";
     }
-    custtype = newtype; // assign local to global
+    custtype = newtype;
     alert("Customer type changed to: " + custtype);
 }
 
-// Function to display custom sales pitch
 function displaytype493() {
     if (custtype == "direct") {
         alert("Buy Now! From this web page! My children need new shoes!");
@@ -78,7 +76,7 @@ function displaytype493() {
 }
 
 // ==================== Lab 5 ====================
-// Function to get customer name
+// Prompt for name and classify
 function getName998() {
     let name = prompt("Enter your name:");
     let message = "Your Name Is: " + name + " ";
@@ -94,9 +92,10 @@ function getName998() {
     document.getElementById("name998").innerText = message;
 }
 
-// Function to get customer age
+// Prompt for age and classify
 function getAge412() {
     let age = prompt("Enter your age:");
+    age = Number(age);
     let message = "Your Age Is: " + age + " ";
 
     if (age < 18) {
@@ -108,4 +107,37 @@ function getAge412() {
     }
 
     document.getElementById("age412").innerText = message;
+}
+
+// ==================== Lab 6 ====================
+// Get number of breaks, validate, then loop
+function getBreaks876() {
+    let num;
+    do {
+        num = prompt("Enter a number from 1 to 5:");
+        num = Number(num);
+    } while (isNaN(num) || num < 1 || num > 5);
+
+    let breaks = "";
+    for (let i = 0; i < num; i++) {
+        breaks += "<br>";
+    }
+
+    document.getElementById("breaks876").innerHTML = breaks;
+}
+
+// Get number of cards, validate, then loop
+function getCards495() {
+    let num;
+    do {
+        num = prompt("Enter a number from 2 to 7:");
+        num = Number(num);
+    } while (isNaN(num) || num < 2 || num > 7);
+
+    let cards = "";
+    for (let i = 0; i < num; i++) {
+        cards += "Card #" + i + " ";
+    }
+
+    document.getElementById("cards495").innerText = cards;
 }
