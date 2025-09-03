@@ -1,3 +1,49 @@
+// ==================== Lab 1 ====================
+// Lab 1 function: confirms before visiting links
+function confirmlink537(url) {
+    let confirmJump = confirm("Do you want to visit this site?");
+    if (confirmJump) {
+        window.location = url;
+        return false;
+    }
+    return false;
+}
+
+// ==================== Lab 2 ====================
+// Lab 2 variables
+let thename = "Brandon Chang";
+let my_message = "cs190 Javascript Lab 2";
+let id = 878;
+
+// Lab 2 function: shows all info in an alert
+function displayinfo871() {
+    alert(
+        "Name: " + thename + " " +
+        "Message: " + my_message + " " +
+        "ID: " + id
+    );
+}
+
+// ==================== Lab 3 ====================
+// Lab 3 variable
+current = 1; // selects which item is "on special"
+
+function displayspecial976() {
+    if (current == 1) {
+        alert("The current special is #1");
+    }
+    if (current == 2) {
+        alert("The current special is #2");
+    }
+    if (current == 3) {
+        alert("The current special is #3");
+    }
+    current = current + 1;
+    if (current > 3) {
+        current = 1; // wrap around
+    }
+}
+
 // ==================== Lab 4 ====================
 // Global variable for customer type
 custtype = "direct"; // starts as "direct"
@@ -31,48 +77,35 @@ function displaytype493() {
     }
 }
 
-// ==================== Lab 3 ====================
-current = 1; // selects which item is "on special"
+// ==================== Lab 5 ====================
+// Function to get customer name
+function getName998() {
+    let name = prompt("Enter your name:");
+    let message = "Your Name Is: " + name + " ";
 
-function displayspecial976() {
-    if (current == 1) {
-        alert("The current special is #1");
+    if (name.length < 5) {
+        message += "You have a short name";
+    } else if (name.length < 10) {
+        message += "You have a medium name";
+    } else {
+        message += "You have a long name";
     }
-    if (current == 2) {
-        alert("The current special is #2");
-    }
-    if (current == 3) {
-        alert("The current special is #3");
-    }
-    current = current + 1;
-    if (current > 3) {
-        current = 1; // wrap around
-    }
+
+    document.getElementById("name998").innerText = message;
 }
 
+// Function to get customer age
+function getAge412() {
+    let age = prompt("Enter your age:");
+    let message = "Your Age Is: " + age + " ";
 
-// ==================== Lab 2 ====================
-// Lab 2 variables
-let thename = "Brandon Chang";
-let my_message = "cs190 Javascript Lab 2";
-let id = 878;
-
-// Lab 2 function: shows all info in an alert
-function displayinfo871() {
-    alert(
-        "Name: " + thename + " " +
-        "Message: " + my_message + " " +
-        "ID: " + id
-    );
-}
-
-// ==================== Lab 1 ====================
-// Lab 1 function: confirms before visiting links
-function confirmlink537(url) {
-    let confirmJump = confirm("Do you want to visit this site?");
-    if (confirmJump) {
-        window.location = url;
-        return false;
+    if (age < 18) {
+        message += "You are a kid";
+    } else if (age < 50) {
+        message += "You are an adult";
+    } else {
+        message += "You are a senior citizen";
     }
-    return false;
+
+    document.getElementById("age412").innerText = message;
 }
