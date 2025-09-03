@@ -1,29 +1,22 @@
 // ==================== Lab 3 ====================
-// Lab 3 variable
-let current = 1; // selects which item is "on special"
+current = 1; // selects which item is "on special"
 
 function displayspecial976() {
-
-    // Fixed error 1: missing closing quote in string
     if (current == 1) {
         alert("The current special is #1");
     }
-
-    // Fixed error 2: missing closing parenthesis in if condition
     if (current == 2) {
         alert("The current special is #2");
     }
-
-    // Fixed error 3: missing closing parenthesis in alert
     if (current == 3) {
         alert("The current special is #3");
     }
-
     current = current + 1;
     if (current > 3) {
         current = 1; // wrap around
     }
 }
+
 
 // ==================== Lab 2 ====================
 // Lab 2 variables
