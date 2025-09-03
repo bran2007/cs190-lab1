@@ -1,3 +1,36 @@
+// ==================== Lab 4 ====================
+// Global variable for customer type
+custtype = "direct"; // starts as "direct"
+
+// Function to change customer type
+function changetype488() {
+    var newtype = ""; // local variable
+    if (custtype == "direct") {
+        newtype = "advertising";
+    }
+    if (custtype == "advertising") {
+        newtype = "subscription";
+    }
+    if (custtype == "subscription") {
+        newtype = "direct";
+    }
+    custtype = newtype; // assign local to global
+    alert("Customer type changed to: " + custtype);
+}
+
+// Function to display custom sales pitch
+function displaytype493() {
+    if (custtype == "direct") {
+        alert("Buy Now! From this web page! My children need new shoes!");
+    }
+    if (custtype == "advertising") {
+        alert("Support our advertisers! Click on an ad, so I can make money!");
+    }
+    if (custtype == "subscription") {
+        alert("Renew your subscription today! My children need medicine!");
+    }
+}
+
 // ==================== Lab 3 ====================
 current = 1; // selects which item is "on special"
 
